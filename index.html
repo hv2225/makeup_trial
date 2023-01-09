@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="row">
+    <h3 style="text-align:center;">Doodle 004: Web Toy</h3>
+    <h5 style="text-align:center;">Members: Hanna Vanya & Claire Zheng</h5>
+    <hr>
+    <br>
+
+    <!-- NAME SECTION-->
+    <div class="jumbotron">
+      <div class="container-top" style="text-align:center;">
+        <div class="row">
+          <div class="col">
+            <h1 style="color:#a52a2a;">TRY ON A NEW MAKEUP TODAY!</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>May we have your name?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <button class="btn btn-default" onclick="setName()">Input Name</button>
+            </div>
+          </div>
+        </div>
+        <h2 id="name">Welcome, <span id="fullName">friend</span>!</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- FACE SECTION-->
+  <!-- Reference: https://www.youtube.com/watch?v=-mpljs6dXEs-->
+
+  <div class="row">
+    <div class="col">
+      <div id="myFace" class="cartoon">
+        <div class="bg-dream"></div>
+        <div class="bg"></div>
+        <div class="neck"></div>
+        <div class="ear hb ha"></div>
+        <div class="ear hb ha"></div>
+        <div class="earring r b"></div>
+        <div class="earring r b"></div>
+        <div class="face hb ha">
+          <div id="eyelids1" class="eyelid" onclick="changeEyelids()"></div>
+          <div id="eyelids2" class="eyelid" onclick="changeEyelids()"></div>
+          <div class="eye r ha hb"></div>
+          <div class="eye r ha hb"></div>
+        </div>
+        <div class="face">
+          <div class="forehead ha hb"></div>
+          <div class="nose r ha"></div>
+          <div id="lips1" class="lip-bottom"></div>
+          <div id="eyebrows1" class="eyebrow r"></div>
+          <div id="eyebrows2" class="eyebrow r"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modify session
+reference: https://www.youtube.com/watch?v=DP9-CVgkgDA-->
+
+<!-- EYEBROWS-->
+<div class="row">
+  <div class="col">
+    <div>Refine your looks with our new eyebrows colors!</div>
+    <input type="color" id="colorInputColor">
+    <input type="button" id="colorButton" onclick="changeEyebrowColor()" value="Click here to new colors on your eyebrows">
+  </div>
+</div>
+
+<!-- EYELIDS-->
+<div class="row">
+  <div class="col">
+    <div>Make your eyes pop with our new colors!</div>
+    <input type="color" id="colorInputColor1">
+    <input type="button" id="colorButton1" onclick="changeEyelids()" value="Click here to new eyeliner colors">
+  </div>
+</div>
+
+<!-- LIPS-->
+<div class="row">
+  <div class="col">
+    <div>Try our new lipstick color!</div>
+    <input type="color" id="colorInputColor2">
+    <input type="button" id="colorButton2" onclick="changeLips()" value="Click here to new colors on your lips">
+  </div>
+</div>
